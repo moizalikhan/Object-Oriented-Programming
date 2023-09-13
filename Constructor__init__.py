@@ -1,3 +1,4 @@
+import csv
 class items:
 #Class Attributes
     pay_rate = 0.7 #discount for all products
@@ -27,7 +28,11 @@ class items:
 
     def __repr__(self):
         return f'items("{self.name}",{self.price},{self.quantity})'
-    
+
+    @classmethod
+    def instantiate_from_csv():
+
+    items.instantiate_from_csv()
 
 #input
 item1 = items('sugar',100, 10)
